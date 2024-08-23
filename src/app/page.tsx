@@ -1,7 +1,8 @@
 "use client"
 
 
-import Image from "next/image";
+
+import { Input } from "@/components/Input";
 import { useForm } from "react-hook-form";
 
 export default function Home() {
@@ -12,7 +13,10 @@ export default function Home() {
   } = useForm();
   return (
     <main className="flex bg-white">
-
+      <Input type={"text"} placeholder={""} label={""} control={control} name={""} iconType={"lock"}
+        className="!text-red-900 "
+        size="lg"
+      />
     </main>
   );
 }
