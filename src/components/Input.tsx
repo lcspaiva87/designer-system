@@ -39,8 +39,8 @@ export interface InputProps {
 }
 
 export function Input({
-  placeholder = "email@gmail.com",
-  type = 'password',
+  placeholder = "name user",
+  type = 'text',
   label,
   required = false,
   control,
