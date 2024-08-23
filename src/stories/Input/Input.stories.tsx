@@ -6,6 +6,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 const meta = {
   title: 'Components/Inputs',
   component: Input,
+  tags: ['autodocs'],
   argTypes: {
     type: {
       control: {

@@ -80,7 +80,7 @@ export function Input({
     setError(validateInput(inputValue))
   }
   const variantButton = tv({
-    base: "flex rounded-lg border bg-gray-50 border-secudary px-4 py-3 gap-3  focus-within:border-orange-500 ",
+    base: "flex rounded-lg border bg-gray-50 border-secudary px-4 py-3 gap-3 justify-between   focus-within:border-orange-500 ",
     variants: {
       disabled: {
         true: "flex rounded-lg border bg-secondary-200 border-white px-4 py-3 gap-3  focus-within:border-orange-500 cursor-not-allowed",
@@ -94,12 +94,12 @@ export function Input({
       control={control}
       rules={{ required }}
       render={({ field }) => (
-        <div className="flex gap-3 flex-col justify-between w-full">
-          <label htmlFor="" className="text-sm font-normal text-textInput">{label}</label>
+        <div className="flex gap-3 flex-col w-full">
+          <label htmlFor="" className="text-sm  font-normal text-textInput">{label}</label>
           <div className={variantButton({
             disabled: disabled
           })}>
-            <div className="flex items-center justify-betwee gap-3">
+            <div className="flex items-center justify-between gap-3">
 
               <Mail className="size-6 text-secudary  " />
               <input
