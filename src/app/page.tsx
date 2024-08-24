@@ -2,21 +2,17 @@
 
 
 
-import { Input } from "@/components/Input";
-import { useForm } from "react-hook-form";
+import { Button } from "@/components/button";
 
 export default function Home() {
-  const {
-    handleSubmit,
-    control,
-    formState: { errors },
-  } = useForm();
+
   return (
-    <main className="flex bg-white">
-      <Input type={"text"} placeholder={""} label={""} control={control} name={""} iconType={"lock"}
-        className="!text-red-900 "
-        size="lg"
-      />
+    <main className="flez  items-center justify-center w-screen h-screen ">
+      <div className="flex justify-center items-center w-screen h-screen">
+        <Button variant='ghost'>
+          asd
+        </Button>
+      </div>
     </main>
   );
 }
