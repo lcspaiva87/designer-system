@@ -35,7 +35,7 @@ export interface InputProps {
   disabled?: boolean;
   iconType?: 'lock' | 'mail' | 'mapPin' | 'user' | 'smartphone' | 'ticket';
   className?: string;
-  size?: 'default' | 'sm' | 'lg' | 'icon' | 'xl';
+  buttonIcon?: boolean;
 }
 
 export function Input({
@@ -48,7 +48,8 @@ export function Input({
   disabled = false,
   iconType,
   className,
-  size = 'default',
+  buttonIcon = false
+
 }: InputProps) {
   const [inputType, setInputType] = useState<InputType>(type)
   const [error, setError] = useState<string | undefined>(undefined)
@@ -124,7 +125,10 @@ export function Input({
           <label htmlFor="" className="text-sm font-normal text-textInput">{label}</label>
           <div className={cn(variantButton({ disabled }), className,)}>
             <div className="flex items-center justify-between gap-3 w-full">
-              {renderIcon()}
+              {buttonIcon && (
+                renderIcon()
+              )}
+
               <input
                 name={name}
                 value={field.value}

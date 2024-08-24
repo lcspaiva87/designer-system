@@ -54,8 +54,10 @@ const config: Config = {
           500: "#F59E0B"
         },
      
+      },
+      boxShadow: {
+        boxShadowItem: "4px 4px 4px 4px rgba(0, 0, 0, 0.05)",
       }
-
 
     },
   },
