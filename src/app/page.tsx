@@ -2,7 +2,7 @@
 
 
 
-import Image from "next/image";
+import { FormRegister } from "@/components/Form";
 export default function Home() {
 
   return (
@@ -24,7 +24,7 @@ export default function Home() {
             ))
           }
         </div> */}
-        <div className="grid grid-cols-2 gap-10 ">
+        {/* <div className="grid grid-cols-2 gap-10 ">
           {Array.from({ length: 10 }).map((_, index) => (
             <div key={index} className="bg-white shadow-boxShadowItem  rounded p-4 flex gap-3 items-center w-full ">
               <Image
@@ -46,8 +46,8 @@ export default function Home() {
               </div>
             </div>
           ))}
-        </div>
-
+        </div> */}
+        <FormRegister />
       </div>
     </main >
   );
