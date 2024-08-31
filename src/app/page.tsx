@@ -2,12 +2,13 @@
 
 
 
-import { FormRegister } from "@/components/Form";
+import { Header } from "@/components/Header";
 export default function Home() {
 
   return (
-    <main className="flex  items-center justify-center w-screen h-screen px-5 ">
+    <main className="flex  items-center justify-center w-screen h-screen px-5 bg-[#808080] ">
       <div className="flex flex-col justify-center items-center w-screen h-screen ">
+        <Header />
         {/* 
         <div className="grid grid-cols-2 gap-10 ">
 
@@ -47,7 +48,7 @@ export default function Home() {
             </div>
           ))}
         </div> */}
-        <FormRegister />
+        {/* <FormRegister /> */}
       </div>
     </main >
   );

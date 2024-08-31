@@ -16,10 +16,7 @@
   }
 }
 
-body {
- background:#808080;
 
-}
 
 @layer utilities {
   .text-balance {

@@ -12,7 +12,7 @@ const buttonVariants = cva(
           'bg-red-500 text-white hover:bg-red-600',
         secondary:
           'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-        ghost: 'hover:bg-secudary hover:text-seconday-900 border border-seconday-400 text-secondary-600 font-medium',
+        ghost: 'hover:bg-secudary hover:text-seconday-900 border border-seconday-400 text-secondary-600 font-medium bg-transparent',
 
       },
       size: {
